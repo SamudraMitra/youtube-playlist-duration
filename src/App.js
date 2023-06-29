@@ -184,8 +184,8 @@ function App() {
         <hr />
         <footer>
           <h3>
-            Fork me on{" "}
-            <a href="https://github.com/neupanedipen/youtube-playlist-duration">
+            Visit my gitub{" "}
+            <a href="https://github.com/SamudraMitra">
               <img src={githubLogo} alt="github logo" className="github-logo" />
             </a>
           </h3>
