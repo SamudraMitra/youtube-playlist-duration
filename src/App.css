@@ -75,8 +75,8 @@
   transition: 0.2s ease;
 }
 
-.submit-btnhover {
-  background-color: #fff;
+.submit-btn:hover {
+  background-color: var(--primary-color);
   color: #ff0000;
   border: 1px solid #ff0000;
   transition: 0.3s ease;
