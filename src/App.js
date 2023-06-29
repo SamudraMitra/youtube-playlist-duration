@@ -2,8 +2,8 @@ import "./App.css";
 import React, { useState } from "react";
 import moment from "moment";
 import spinner from "../src/assets/spinner.svg";
-import githubLogo from "../src/assets/github.png";
-
+import githubLogo from "../src/assets/icons8-github-480.png";
+import Toggler from "./components/darkmode";
 function App() {
   const [playlistUrl, setPlaylistUrl] = useState("");
   const [allDetails, setAllDetails] = useState({});
@@ -136,7 +136,8 @@ function App() {
       <div className="container pt-2">
         <hr />
         <h1 className="app-title">
-          <span id="diff">Y</span>ouTube Playlist Length
+          <span id="diff">YouTube Playlist Length</span>
+          <Toggler />
         </h1>
         <hr />
         <div className="input-group">
@@ -156,7 +157,7 @@ function App() {
         <div className="example-link">
           <p>
             <strong>Example:</strong>{" "}
-            https://www.youtube.com/playlist?list=PLTxhk835mIdJgdTORxj8xPOkb-ceoue7A
+            https://youtube.com/playlist?list=PL3Y14T80kDroPBjkYJQCz9tndR17tSSmG
           </p>
         </div>
         <>
@@ -184,7 +185,6 @@ function App() {
         <hr />
         <footer>
           <h3>
-            Visit my gitub{" "}
             <a href="https://github.com/SamudraMitra">
               <img src={githubLogo} alt="github logo" className="github-logo" />
             </a>

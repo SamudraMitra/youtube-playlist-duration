@@ -33,6 +33,7 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  /* border-radius: 5px; */
 }
 @media (max-width: 720px) {
   .input-group {
@@ -41,6 +42,7 @@
 }
 
 .input-link {
+  height: 30px;
   width: 70%;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -48,7 +50,8 @@
   letter-spacing: 2px;
   padding: 0.5rem;
   border: 1px solid hsl(225, 10%, 45%);
-  box-shadow: 2px 2px 2px 2px #ccc;
+  border-radius: 20px;
+  /* box-shadow: 2px 2px 2px 2px #ccc; */
 }
 @media (max-width: 720px) {
   .input-link {
@@ -66,7 +69,7 @@
   overflow: hidden;
   cursor: pointer;
   background-color: #ff0000;
-  color: #fff;
+  color: var(--primary-color);
   border: 1px solid #fff;
   border-radius: 3px;
   transition: 0.2s ease;
@@ -80,13 +83,13 @@
 }
 
 .example-link {
-  padding: 1rem;
+  padding: 0.2rem;
   font-size: 0.9rem;
   font-family: "Urbanist", sans-serif;
   font-weight: 400;
   word-spacing: 5px;
   letter-spacing: 1px;
-  color: #0f0f0f;
+  color: var(--secondary-color);
 }
 @media (max-width: 720px) {
   .example-link {
@@ -101,7 +104,7 @@
   font-weight: 400;
   word-spacing: 5px;
   letter-spacing: 1px;
-  color: #0f0f0f;
+  color: var(--secondary-color);
 }
 
 .display-length h2 {
@@ -110,20 +113,21 @@
   font-weight: 600;
   word-spacing: 5px;
   letter-spacing: 1px;
-  color: #0f0f0f;
+  color: var(--secondary-color);
 }
 
-footer{
+footer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
 }
 
-footer h3{
+footer h3 {
   font-size: 1.1rem;
+  color: var(--primary-color);
 }
 
-img.github-logo{
+img.github-logo {
   margin-left: 0.8rem;
   width: 40px;
   height: 40px;
@@ -150,7 +154,6 @@ img.github-logo{
   color: #61dafb;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -159,4 +162,14 @@ img.github-logo{
   to {
     transform: rotate(360deg);
   }
+}
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --grey-color: #d4d3d3;
+}
+.dark-theme {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --grey-color: #393939;
 }
