@@ -137,7 +137,6 @@ function App() {
         <hr />
         <h1 className="app-title">
           <span id="diff">YouTube Playlist Length</span>
-          <Toggler />
         </h1>
         <hr />
         <div className="input-group">
@@ -149,7 +148,11 @@ function App() {
             onChange={(e) => setPlaylistUrl(e.target.value)}
           />
           <span className="text no-outline">
-            <button type="button" className="submit-btn" onClick={handleClick}>
+            <button
+              type="button"
+              className="submit-button"
+              onClick={handleClick}
+            >
               Get Length
             </button>
           </span>
@@ -188,6 +191,7 @@ function App() {
             <a href="https://github.com/SamudraMitra">
               <img src={githubLogo} alt="github logo" className="github-logo" />
             </a>
+            <Toggler />
           </h3>
         </footer>
       </div>
